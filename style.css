@@ -13,15 +13,13 @@ div {
         background-color:green;
         display: flex;
         flex-direction: row;
+        flex-wrap:wrap;
     }
-    /* #medium {
-        display:block;
-    } */
     #small {
-        flex: 2/3fr;
+        flex: 2;
     }
     #medium {
-        flex: 1/3fr;
+        flex: 1;
     }
 }
 
@@ -32,6 +30,6 @@ div {
         flex-direction: row;
     }
     #small, #medium, #large {
-        display:1;
+        flex:1;
     }
 }
