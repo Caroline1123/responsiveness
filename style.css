@@ -1,0 +1,37 @@
+div {
+    padding:5px;
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (min-width:480px) and (max-width:1024px) {
+    body {
+        background-color:green;
+        display: flex;
+        flex-direction: row;
+    }
+    /* #medium {
+        display:block;
+    } */
+    #small {
+        flex: 2/3fr;
+    }
+    #medium {
+        flex: 1/3fr;
+    }
+}
+
+@media (min-width:1024px) {
+    body {
+        background-color:blue;
+        display: flex;
+        flex-direction: row;
+    }
+    #small, #medium, #large {
+        display:1;
+    }
+}
